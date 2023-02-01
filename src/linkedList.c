@@ -75,7 +75,7 @@ void delete(Node* list, void* data, int (*cmp)(const void*, const void*)) {
         curr = curr->next;
     }
 
-    while(curr) {
+    while(curr->data) {
         if(cmp(curr->data, data))
             prev->next = curr->next;
         else
