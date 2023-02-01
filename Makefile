@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS += -Wall -Wextra
+CFLAGS += -Wall -Wextra -g
 GENDIRS = bin lib test
 LIBFLAGS = -fpic -shared
 INCLUDES = include

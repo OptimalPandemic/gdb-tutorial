@@ -90,7 +90,7 @@ Node* search(Node* list, void* data, int (*cmp)(const void*, const void*)) {
 
     Node *curr = list;
 
-    while(curr != NULL) {
+    while(curr->data != NULL) {
         if (cmp(curr->data, data))
             return curr;
         curr = curr->next;
